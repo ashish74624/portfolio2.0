@@ -1,5 +1,6 @@
 import React from 'react'
 import { SparklesCore } from "@/Components/ui/sparkles";
+import { LinkPreview } from '@/Components/ui/link-preview';
 
 export default function About() {
   return (
@@ -24,9 +25,14 @@ export default function About() {
             <div className="about-sec">
                 <h1 className='text-white text-4xl'>Get to know Me !</h1>
                 <p className='text-gray-200 mt-5 text-lg text-justify'>
-                    I&apos;m a <HightLight text='Full Stack Web Developer'/> building and managing the Front-end and Back-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <HightLight text='Projects'/> section.
+                     
+                    I&apos;m a <HightLight text='Full Stack Web Developer'/> building and managing the Front-end and Back-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <LinkPreview url="/#about" className="font-bold">
+                        Projects
+                    </LinkPreview> section.
                     <br /> <br />
-                    I&apos;m currently persuing my B.E in Information Science and Engineering from <HightLight text='R.N.S Institute of Technology'/> in Bangalore , India
+                    I&apos;m currently persuing my B.E in Information Science and Engineering from <LinkPreview url="http://rnsit.ac.in/" className="font-bold">
+                        R.N.S Institute of Technology
+                    </LinkPreview> in Bangalore , India
                     <br /> <br />
                     I&apos;m open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don&apos;t hesitate to <HightLight text='contact'/> me.
                 </p>
