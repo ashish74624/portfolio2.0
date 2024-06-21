@@ -4,11 +4,12 @@ import { motion } from "framer-motion";
 import React from "react";
 import { AuroraBackground } from "@/Components/ui/aurora-background";
 import About from "./sections/About";
+import Project from "./sections/Project";
 
 export default function Home() {
   return (
     <AuroraBackground className="h-max w-full overflow-x-hidden overflow-y-auto" >
-        <main className="dark bg-zinc-900 flex justify-center items-center h-screen w-full">
+      <main className="dark bg-zinc-900 flex justify-center items-center h-screen w-full">
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,8 +38,9 @@ export default function Home() {
             </a>
           </div>
         </motion.div>
-    </main>
+      </main>
       <About/>
-      </AuroraBackground>
+      <Project/>
+    </AuroraBackground>
   );
 }

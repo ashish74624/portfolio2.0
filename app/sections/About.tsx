@@ -5,18 +5,6 @@ import { LinkPreview } from '@/Components/ui/link-preview';
 export default function About() {
   return (
     <section className='w-full h-screen z-10 flex flex-col' id='about'>
-        {/* <div className="w-full absolute inset-0 -z-10 h-full">
-                    <SparklesCore
-                    id="tsparticlesfullpage"
-                    background="transparent"
-                    minSize={0.6}
-                    maxSize={1.4}
-                    particleDensity={100}
-                    className="w-full h-full"
-                    particleColor="#FFFFFF"
-                    />
-                </div> */}
-
         <h1 className='text-3xl md:text-6xl font-bold dark:text-white text-center mt-12'>About Me</h1>
         <div className='w-20 h-2 mt-4 mx-auto bg-blueDash rounded-full'></div>
 
@@ -26,7 +14,7 @@ export default function About() {
                 <h1 className='text-white text-4xl'>Get to know Me !</h1>
                 <p className='text-gray-200 mt-5 text-lg text-justify'>
                      
-                    I&apos;m a <HightLight text='Full Stack Web Developer'/> building and managing the Front-end and Back-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <LinkPreview url="/#about" className="font-bold">
+                    I&apos;m a <HightLight text='Full Stack Web Developer'/> building and managing the Front-end and Back-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <LinkPreview url="#project" className="font-bold">
                         Projects
                     </LinkPreview> section.
                     <br /> <br />
