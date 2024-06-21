@@ -22,7 +22,7 @@ export default function Home() {
           <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
             I&apos;m Ashish Kumar
           </div>
-          <div className="font-extralight text-base md:text-4xl dark:text-[#9faac0] py-4">
+          <div className="font-extralight text-base md:text-4xl dark:text-blueDash py-4">
             Full Stack Developer
           </div>
           <div className="flex gap-4">
