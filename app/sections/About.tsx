@@ -19,11 +19,11 @@ export default function About() {
         <h1 className='text-3xl md:text-6xl font-bold dark:text-white text-center mt-12'>About Me</h1>
         <div className='w-20 h-2 mt-4 mx-auto bg-[#89b0ff] rounded-full'></div>
 
-        <div className='flex w-full gap-14 mt-10 justify-center'>
+        <div className='flex lg:flex-row flex-col w-full px-4 md:px-6 lg:px-0 gap-14 mt-10 justify-center'>
 
-            <div className="h-max relative w-5/12  rounded-md">
+            <div className="about-sec">
                 <h1 className='text-white text-4xl'>Get to know Me !</h1>
-                <p className='text-gray-200 mt-5 text-lg'>
+                <p className='text-gray-200 mt-5 text-lg text-justify'>
                     I&apos;m a <HightLight text='Full Stack Web Developer'/> building and managing the Front-end and Back-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <HightLight text='Projects'/> section.
                     <br /> <br />
                     I&apos;m currently persuing my B.E in Information Science and Engineering from <HightLight text='R.N.S Institute of Technology'/> in Bangalore , India
@@ -32,23 +32,19 @@ export default function About() {
                 </p>
             </div>
 
-            <div className='w-5/12 rounded text-white'>
+            <div className='about-sec'>
                 <h1 className='text-white text-4xl'>My Skills</h1>
-                <div className='mt-5 space-x-4'>
+                <div className='mt-5 w-full gap-4 flex flex-wrap'>
                     <Card text='HTML' color='text-orange-500'/>
                     <Card text='CSS' color='text-blue-500'/>
                     <Card text='JavaScript' color='text-yellow-300'/>
                     <Card text='React' color='text-[#58C4DC]'/>
                     <Card text='Tailwind Css' color='text-sky-400'/>
-                </div>
-                <div className='mt-4 space-x-4'>
                     <Card text='React Router' color='text-red-500'/>
                     <Card text='Next Js' color='text-white'/>
                     <Card text='Git' color='text-orange-500'/>
                     <Card text='Github' color='text-white'/>
                     <Card text='Node Js' color='text-green-200'/>
-                </div>
-                <div className='mt-4 space-x-4'>
                     <Card text='Express Js' color='text-white'/>
                     <Card text='Mongo Db' color='text-green-500'/>
                 </div>
@@ -73,8 +69,8 @@ function HightLight ({text}:Props){
 
 function Card ({text,color}:CardProps){
     return (
-        <span className={`bg-zinc-800 ${color.toString()} text-xl px-4 py-1 rounded-md`}>
+        <div className={`bg-zinc-800 ${color.toString()} text-xl px-4 py-1 rounded-md`}>
             {text} 
-        </span>
+        </div>
     )
 }

@@ -73,4 +73,9 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .about-sec {
+    @apply h-max relative w-full lg:w-5/12  rounded-md
+  }
+
 }
