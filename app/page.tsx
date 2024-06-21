@@ -7,8 +7,8 @@ import About from "./sections/About";
 
 export default function Home() {
   return (
-    <main className="dark bg-zinc-900  h-max w-full">
-      <AuroraBackground >
+    <AuroraBackground className="h-max w-full overflow-x-hidden overflow-y-auto" >
+        <main className="dark bg-zinc-900 flex justify-center items-center h-screen w-full">
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,8 +37,8 @@ export default function Home() {
             </a>
           </div>
         </motion.div>
-      </AuroraBackground>
-      <About/>
     </main>
+      <About/>
+      </AuroraBackground>
   );
 }

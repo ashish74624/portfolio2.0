@@ -4,8 +4,8 @@ import { LinkPreview } from '@/Components/ui/link-preview';
 
 export default function About() {
   return (
-    <section className='w-full h-screen relative z-10 flex flex-col' id='about'>
-        <div className="w-full absolute inset-0 -z-10 h-full">
+    <section className='w-full h-screen z-10 flex flex-col' id='about'>
+        {/* <div className="w-full absolute inset-0 -z-10 h-full">
                     <SparklesCore
                     id="tsparticlesfullpage"
                     background="transparent"
@@ -15,10 +15,10 @@ export default function About() {
                     className="w-full h-full"
                     particleColor="#FFFFFF"
                     />
-                </div>
+                </div> */}
 
         <h1 className='text-3xl md:text-6xl font-bold dark:text-white text-center mt-12'>About Me</h1>
-        <div className='w-20 h-2 mt-4 mx-auto bg-[#89b0ff] rounded-full'></div>
+        <div className='w-20 h-2 mt-4 mx-auto bg-blueDash rounded-full'></div>
 
         <div className='flex lg:flex-row flex-col w-full px-4 md:px-6 lg:px-0 gap-14 mt-10 justify-center'>
 
@@ -41,18 +41,18 @@ export default function About() {
             <div className='about-sec'>
                 <h1 className='text-white text-4xl'>My Skills</h1>
                 <div className='mt-5 w-full gap-4 flex flex-wrap'>
-                    <Card text='HTML' color='text-orange-500'/>
-                    <Card text='CSS' color='text-blue-500'/>
-                    <Card text='JavaScript' color='text-yellow-300'/>
-                    <Card text='React' color='text-[#58C4DC]'/>
-                    <Card text='Tailwind Css' color='text-sky-400'/>
-                    <Card text='React Router' color='text-red-500'/>
-                    <Card text='Next Js' color='text-white'/>
-                    <Card text='Git' color='text-orange-500'/>
-                    <Card text='Github' color='text-white'/>
-                    <Card text='Node Js' color='text-green-200'/>
-                    <Card text='Express Js' color='text-white'/>
-                    <Card text='Mongo Db' color='text-green-500'/>
+                    <Card text='HTML' />
+                    <Card text='CSS' />
+                    <Card text='JavaScript' />
+                    <Card text='React' />
+                    <Card text='Tailwind Css' />
+                    <Card text='React Router' />
+                    <Card text='Next Js' />
+                    <Card text='Git' />
+                    <Card text='Github' />
+                    <Card text='Node Js' />
+                    <Card text='Express Js' />
+                    <Card text='Mongo Db' />
                 </div>
             </div>
         </div>
@@ -66,16 +66,15 @@ interface Props {
 
 interface CardProps{
     text:string;
-    color:string;
 }
 
 function HightLight ({text}:Props){
     return <span className='text-[#89b0ff]'>{text}</span>
 }
 
-function Card ({text,color}:CardProps){
+function Card ({text}:CardProps){
     return (
-        <div className={`bg-zinc-800 ${color.toString()} text-xl px-4 py-1 rounded-md`}>
+        <div className={`bg-zinc-800 text-white border border-blueDash text-xl px-4 py-1 rounded-md`}>
             {text} 
         </div>
     )
