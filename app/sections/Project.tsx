@@ -7,37 +7,55 @@ export const projects = [
     title: "Poloroid",
     description:
       "A Social Media Platform.",
-    link: "https://stripe.com",
+    link: "https://poloroid.vercel.app/",
+    img:"/poloroid.png",
+    techStack:"React | Tailwind Css | Express | Mongo Db",
+    github:"https://github.com/ashish74624/Poloroid"
   },
   {
     title: "Solids",
     description:
       "An Ecommerce platform",
-    link: "https://netflix.com",
+    link: "https://solids.vercel.app/",
+    img:"/s.png",
+    techStack:"Next Js | Kinde Auth | Razorpay",
+    github:"https://github.com/ashish74624/Solids"
   },
   {
     title: "Pixel Pry",
     description:
-      "An Image Uploader and Retrival Website.",
+      "Image Uploader, Retrival Website.",
     link: "https://google.com",
+    img:"/poloroid.png",
+    techStack:"React | Tailwind Css | Express | Mongo Db",
+    github:"https://github.com/ashish74624/Poloroid"
   },
   {
     title: "ShelfWise",
     description:
       "A Library Management System",
     link: "https://meta.com",
+    img:"/poloroid.png",
+    techStack:"React | Tailwind Css | Express | Mongo Db",
+    github:"https://github.com/ashish74624/Poloroid"
   },
   {
     title: "UpFront",
     description:
       "A news website made with next js",
-    link: "https://amazon.com",
+    link: "https://upfront-fawn.vercel.app/",
+    img:"/upfront.png",
+    techStack:"Next Js | Tailwind Css",
+    github:"https://github.com/ashish74624/UpFront"
   },
   {
     title: "InspireEd",
     description:
       "An Education platform",
     link: "https://microsoft.com",
+    img:"/poloroid.png",
+    techStack:"React | Tailwind Css | Express | Mongo Db",
+    github:"https://github.com/ashish74624/Poloroid"
   },
 ];
 

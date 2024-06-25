@@ -12,6 +12,9 @@ export const HoverEffect = ({
     title: string;
     description: string;
     link: string;
+    github:string;
+    img:string;
+    techStack:string;
   }[];
   className?: string;
 }) => {
@@ -50,14 +53,17 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
+            <img className="rounded-md w-full h-56" src={item.img} alt="h"/>
             <CardTitle>{item.title}</CardTitle>
-            <img className="rounded-md w-full h-56 mt-4" src="https://picsum.photos/200/300" alt="h"/>
             <CardDescription>{item.description}</CardDescription>
+            <p className="text-blueDash text-sm">
+              {item.techStack}
+            </p>
             <div className="flex gap-6 justify-center mt-4">
-              <a href="http://" target="_blank">
+              <a href={item.link} target="_blank">
                 <Button text="View"/>
               </a>
-              <a href="http://" target="_blank">
+              <a href={item.github} target="_blank">
                 <Button text="Github"/>
               </a>
             </div>
@@ -96,7 +102,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 text-lg font-bold tracking-wide", className)}>
+    <h4 className={cn("text-zinc-100 text-lg font-bold tracking-wide mt-1", className)}>
       {children}
     </h4>
   );
@@ -111,7 +117,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        " text-zinc-400 tracking-wide leading-relaxed text",
         className
       )}
     >
