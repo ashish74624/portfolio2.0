@@ -5,6 +5,7 @@ import React from "react";
 import { AuroraBackground } from "@/Components/ui/aurora-background";
 import About from "./sections/About";
 import Project from "./sections/Project";
+import Button from "@/Components/Button";
 
 export default function Home() {
   return (
@@ -27,14 +28,9 @@ export default function Home() {
             Full Stack Developer
           </div>
           <div className="flex gap-4">
-            <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
-              Resume
-            </button>
+            <Button text="Resume"/>
             <a href="#about">
-
-            <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
-              View More
-            </button>
+              <Button text="View More"/>
             </a>
           </div>
         </motion.div>
