@@ -1,7 +1,8 @@
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
+import Button from "../Button";
 
 export const HoverEffect = ({
   items,
@@ -50,7 +51,16 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card>
             <CardTitle>{item.title}</CardTitle>
+            <img className="rounded-md w-full h-56 mt-4" src="https://picsum.photos/200/300" alt="h"/>
             <CardDescription>{item.description}</CardDescription>
+            <div className="flex gap-6 justify-center mt-4">
+              <a href="http://" target="_blank">
+                <Button text="View"/>
+              </a>
+              <a href="http://" target="_blank">
+                <Button text="Github"/>
+              </a>
+            </div>
           </Card>
         </div>
       ))}
@@ -68,7 +78,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-full w-full p-2 overflow-hidden bg-black/60 border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
       )}
     >
@@ -86,7 +96,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
+    <h4 className={cn("text-zinc-100 text-lg font-bold tracking-wide", className)}>
       {children}
     </h4>
   );

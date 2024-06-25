@@ -1,20 +1,13 @@
 import React from 'react'
-import { Button } from "@/Components/ui/button"
-import { Barlow } from 'next/font/google'
-
-const bar = Barlow({
-  subsets:['latin'],
-  weight:'500'
-})
 
 interface propType {
-    data:string
+    text:string
 }
 
-export default function Btn({data}:propType) {
+export default function Button({text}:propType) {
   return (
-    <Button className={`${bar.className} bg-[#4d2d18] hover:bg-[#9b5021] text-white text-3xl w-72 h-14 rounded-lg`} >
-      {data}
-    </Button>
+    <button className="bg-white rounded-full text-black py-2 w-28" >
+      {text}
+    </button>
   )
 }

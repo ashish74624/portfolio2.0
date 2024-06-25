@@ -4,39 +4,39 @@ import { HoverEffect } from '@/Components/ui/card-hover-effect';
 
 export const projects = [
   {
-    title: "Stripe",
+    title: "Poloroid",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "A Social Media Platform.",
     link: "https://stripe.com",
   },
   {
-    title: "Netflix",
+    title: "Solids",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+      "An Ecommerce platform",
     link: "https://netflix.com",
   },
   {
-    title: "Google",
+    title: "Pixel Pry",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
+      "An Image Uploader and Retrival Website.",
     link: "https://google.com",
   },
   {
-    title: "Meta",
+    title: "ShelfWise",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+      "A Library Management System",
     link: "https://meta.com",
   },
   {
-    title: "Amazon",
+    title: "UpFront",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+      "A news website made with next js",
     link: "https://amazon.com",
   },
   {
-    title: "Microsoft",
+    title: "InspireEd",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+      "An Education platform",
     link: "https://microsoft.com",
   },
 ];
