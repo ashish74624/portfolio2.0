@@ -25,19 +25,19 @@ export const projects = [
     title: "Pixel Pry",
     description:
       "Image Uploader, Retrival Website.",
-    link: "https://google.com",
-    img:"/poloroid.png",
+    link: "https://tech-nexus.vercel.app/",
+    img:"/px.png",
     techStack:"React | Tailwind Css | Express | Mongo Db",
-    github:"https://github.com/ashish74624/Poloroid"
+    github:"https://github.com/ashish74624/Pixel-Pry-TechNexus"
   },
   {
     title: "ShelfWise",
     description:
       "A Library Management System",
-    link: "https://meta.com",
-    img:"/poloroid.png",
-    techStack:"React | Tailwind Css | Express | Mongo Db",
-    github:"https://github.com/ashish74624/Poloroid"
+    link: "https://shelfwise.vercel.app/",
+    img:"/lms.png",
+    techStack:"Next js | Aceternity UI | Express | Mongo Db",
+    github:"https://github.com/ashish74624/ShelfWise"
   },
   {
     title: "UpFront",
@@ -49,7 +49,7 @@ export const projects = [
     github:"https://github.com/ashish74624/UpFront"
   },
   {
-    title: "InspireEd",
+    title: "InspireEd - Ongoing",
     description:
       "An Education platform",
     link: "https://microsoft.com",
