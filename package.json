@@ -22,6 +22,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.11",
     "next": "13.5",
+    "nodemailer": "^6.9.14",
     "qss": "^3.0.0",
     "react": "^18",
     "react-dom": "^18",
