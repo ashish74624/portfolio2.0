@@ -6,6 +6,7 @@ import { AuroraBackground } from "@/Components/ui/aurora-background";
 import About from "./sections/About";
 import Project from "./sections/Project";
 import Button from "@/Components/Button";
+import Contact from "./sections/Contact";
 
 export default function Home() {
   return (
@@ -28,15 +29,16 @@ export default function Home() {
             Full Stack Developer
           </div>
           <div className="flex gap-4">
-            <Button text="Resume"/>
+            <Button text="Resume" />
             <a href="#about">
-              <Button text="View More"/>
+              <Button text="View More" />
             </a>
           </div>
         </motion.div>
       </main>
-      <About/>
-      <Project/>
+      <About />
+      <Project />
+      <Contact />
     </AuroraBackground>
   );
 }
