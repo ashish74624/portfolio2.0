@@ -46,8 +46,8 @@ export default function Contact() {
     };
     return (
         <section className='w-full z-50'>
-            <form onSubmit={handleSubmit} className='space-y-4'>
-                <div>
+            <form onSubmit={handleSubmit} className='space-y-4 bg-gray-500 w-max mx-auto px-8 rounded-md '>
+                <div className='flex flex-col'>
                     <label className='text-white' htmlFor="name">Name</label>
                     <input
                         type="text"
@@ -55,7 +55,7 @@ export default function Contact() {
                         name="name"
                         onChange={handleChange}
                         required
-                        className='text-black'
+                        className='text-black w-96 px-1 py-1.5 rounded-md'
                     />
                 </div>
                 <div>
