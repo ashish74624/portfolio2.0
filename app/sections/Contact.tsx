@@ -1,4 +1,5 @@
 "use client"
+import Heading from '@/Components/Heading';
 import React from 'react'
 import { useState, ChangeEvent, FormEvent } from 'react';
 
@@ -46,42 +47,54 @@ export default function Contact() {
     };
     return (
         <section className='w-full z-50'>
-            <form onSubmit={handleSubmit} className='space-y-4 bg-gray-500 w-max mx-auto px-8 rounded-md '>
-                <div className='flex flex-col'>
-                    <label className='text-white' htmlFor="name">Name</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        onChange={handleChange}
-                        required
-                        className='text-black w-96 px-1 py-1.5 rounded-md'
-                    />
-                </div>
+            <Heading heading='Contact Me' />
+            <div className='flex '>
+                <form onSubmit={handleSubmit} className='p-4 bg-gray-500 w-max mx-auto rounded-md '>
+                    <div className='flex flex-col'>
+                        <InputFeild id='name' placeholder='Name' handleChange={handleChange} />
+                    </div>
+                    <div>
+                        <InputFeild id='email' placeholder='Email' handleChange={handleChange} />
+                    </div>
+                    <div>
+                        <textarea
+                            id="message"
+                            name="message"
+                            onChange={handleChange}
+                            required
+                            className='text-black bg-gray-700 w-96 rounded-md min-h-32 px-1 py-1.5'
+                            placeholder='Message'
+                        ></textarea>
+                    </div>
+                    <button className='w-full bg-white py-2 rounded-md mt-2' type="submit">Send</button>
+                    <p>{status}</p>
+                </form>
                 <div>
-                    <label className='text-white' htmlFor="email">Email</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        onChange={handleChange}
-                        required
-                        className='text-black'
-                    />
+                    <p>
+                        I&apos;d love to hear from you! Whether you have a question, feedback, or just want to connect, feel free to reach out using the form below
+                    </p>
                 </div>
-                <div>
-                    <label className='text-white' htmlFor="message">Message</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        onChange={handleChange}
-                        required
-                        className='text-black'
-                    ></textarea>
-                </div>
-                <button type="submit">Send</button>
-                <p>{status}</p>
-            </form>
+            </div>
         </section>
+    )
+}
+
+interface InputFeildProps {
+    id: string;
+    placeholder: string;
+    handleChange: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void
+}
+
+function InputFeild({ id, handleChange, placeholder }: InputFeildProps) {
+    return (
+        <input
+            type="text"
+            id={id}
+            name={id}
+            onChange={handleChange}
+            required
+            className='text-black w-96 px-1 py-1.5 mb-2 rounded-md bg-gray-700'
+            placeholder={placeholder}
+        />
     )
 }
