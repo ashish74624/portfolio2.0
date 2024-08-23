@@ -20,15 +20,15 @@ export default function Home() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="relative flex flex-col gap-2 items-center justify-center px-4"
+          className="relative flex flex-col gap-0.5 md:gap-2 items-center justify-center px-4"
         >
-          <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
+          <div className="text-4xl md:text-7xl font-bold dark:text-white text-center">
             I&apos;m Ashish Kumar
           </div>
-          <div className="font-extralight text-base md:text-4xl dark:text-blueDash py-4">
+          <div className="font-extralight text-base md:text-4xl dark:text-blueDash md:py-4">
             Full Stack Developer
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 md:mt-0 mt-2">
             <Button text="Resume" />
             <a href="#about">
               <Button text="View More" />
