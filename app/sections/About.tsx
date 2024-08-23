@@ -1,11 +1,10 @@
 import React from 'react'
-import { SparklesCore } from "@/Components/ui/sparkles";
 import { LinkPreview } from '@/Components/ui/link-preview';
 import Heading from '@/Components/Heading';
 
 export default function About() {
     return (
-        <section className='w-full h-screen z-10 flex flex-col' id='about'>
+        <section className='w-full min-h-screen h-max z-50 ' id='about'>
             <Heading heading='About Me' />
 
             <div className='flex lg:flex-row flex-col w-full px-4 md:px-6 lg:px-0 gap-14 mt-10 justify-center'>

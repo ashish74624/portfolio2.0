@@ -82,7 +82,7 @@
   }
 
   .about-sec {
-    @apply h-max relative w-full lg:w-5/12  rounded-md
+    @apply h-max w-full lg:w-5/12  rounded-md
   }
 
 }

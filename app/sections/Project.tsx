@@ -62,7 +62,7 @@ export const projects = [
 
 export default function Project() {
   return (
-    <section className=' w-full flex flex-col' id='project'>
+    <section className=' w-full flex flex-col z-50' id='project'>
       <Heading heading='My Project' />
       <div className="max-w-5xl h-max mx-auto ">
         <HoverEffect items={projects} />
