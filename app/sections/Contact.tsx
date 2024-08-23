@@ -49,7 +49,7 @@ export default function Contact() {
         }
     };
     return (
-        <section className='w-full z-50 pb-10'>
+        <section id='contact' className='w-full z-50 pb-10'>
             <Heading heading='Contact Me' />
             <div className='flex flex-col lg:flex-row w-max mx-auto gap-16 mt-8'>
                 <form onSubmit={handleSubmit} className='p-4 bg-black/60 border border-white/[0.2] w-max mx-auto rounded-2xl'>

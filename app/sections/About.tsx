@@ -21,7 +21,9 @@ export default function About() {
                             R.N.S Institute of Technology
                         </LinkPreview> in Bangalore , India
                         <br /> <br />
-                        I&apos;m open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don&apos;t hesitate to <HightLight text='contact' /> me.
+                        I&apos;m open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don&apos;t hesitate to <LinkPreview url="#contact" className="font-bold">
+                            Contact
+                        </LinkPreview> me.
                     </p>
                 </div>
 
