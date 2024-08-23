@@ -29,7 +29,9 @@ export default function Home() {
             Full Stack Developer
           </div>
           <div className="flex gap-4 md:mt-0 mt-2">
-            <Button text="Resume" />
+            <a href="/resume.pdf" target="_blank">
+              <Button text="Resume" />
+            </a>
             <a href="#about">
               <Button text="View More" />
             </a>
