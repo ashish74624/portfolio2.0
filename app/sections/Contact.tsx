@@ -51,7 +51,7 @@ export default function Contact() {
     return (
         <section className='w-full z-50 pb-10'>
             <Heading heading='Contact Me' />
-            <div className='flex w-max mx-auto gap-16 mt-8'>
+            <div className='flex flex-col lg:flex-row w-max mx-auto gap-16 mt-8'>
                 <form onSubmit={handleSubmit} className='p-4 bg-black/60 border border-white/[0.2] w-max mx-auto rounded-2xl'>
                     <div className='flex flex-col'>
                         <InputFeild id='name' placeholder='Name' handleChange={handleChange} />
@@ -65,14 +65,14 @@ export default function Contact() {
                             name="message"
                             onChange={handleChange}
                             required
-                            className='text-white bg-gray-900 w-96 rounded-md min-h-32 px-2 py-1.5'
+                            className='text-white bg-gray-900 w-72 md:w-96 rounded-md min-h-32 px-2 py-1.5'
                             placeholder='Message'
                         ></textarea>
                     </div>
                     <button className='w-full bg-white py-2 rounded-2xl mt-2' type="submit">Send</button>
                     <p>{status}</p>
                 </form>
-                <div className='text-gray-200 w-[500px] '>
+                <div className='text-gray-200 w-screen px-4 lg:px-0 max-w-[500px] '>
                     <p className='text-justify'>
                         I&apos;d love to hear from you! Whether you have a question, feedback, or just want to connect, feel free to reach out.
                     </p>
@@ -101,7 +101,7 @@ function InputFeild({ id, handleChange, placeholder }: InputFeildProps) {
             name={id}
             onChange={handleChange}
             required
-            className='text-white w-96 px-2 mb-2 rounded-2xl h-10 bg-gray-900'
+            className='text-white w-72 md:w-96 px-2 mb-2 rounded-2xl h-10 bg-gray-900'
             placeholder={placeholder}
         />
     )
