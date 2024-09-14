@@ -78,8 +78,8 @@ export default function Contact() {
                     </p>
                     <div className='mt-2'>
                         <p className='flex gap-2 h-max items-center'><Mail /> ashish74624@gmail.com</p>
-                        <a href='https://www.linkedin.com/in/ashish74624' target="_blank" className='flex gap-2 h-max items-center'><Linkedin />linkedin.com/in/ashish74624</a>
-                        <a href='https://github.com/ashish74624' target='_blank' className='flex gap-2 h-max items-center'><Github /> github.com/ashish74624</a>
+                        <a href='https://www.linkedin.com/in/ashish74624' target="_blank" className='flex gap-2 h-max items-center hover:underline'><Linkedin />linkedin.com/in/ashish74624</a>
+                        <a href='https://github.com/ashish74624' target='_blank' className='flex gap-2 h-max items-center hover:underline'><Github /> github.com/ashish74624</a>
                     </div>
                 </div>
             </div>
